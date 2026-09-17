@@ -1,6 +1,51 @@
 <!DOCTYPE html>
 <html lang="ne">
-<head><!DOCTYPE html>
+<head><!DOCTYPE html>GitHub Pages
+   ↓
+index.html
+   ↓ POST { url }
+Backend API
+   ↓
+Facebook URL process
+   ↓
+Download URL
+   ↓
+Frontend मा Download buttonfb-video-downloader-api/
+├── server.js
+├── package.json
+└── .envconst API_URL = "https://YOUR-BACKEND-URL.com";
+
+async function downloadVideo() {
+    const url = document.getElementById("videoUrl").value.trim();
+
+    if (!url) {
+        alert("Facebook video link राख्नुहोस्");
+        return;
+    }
+
+    try {
+        const response = await fetch(`${API_URL}/api/download`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ url })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok || !data.success) {
+            throw new Error(data.message || "Download failed");
+        }
+
+        // यहाँ returned download links देखाउने
+        console.log(data);
+
+    } catch (error) {
+        console.error(error);
+        alert("Video निकाल्न सकिएन: " + error.message);
+    }
+}
 <html class="scroll-smooth" lang="ne">
 <head>
     <meta charset="utf-8" />
