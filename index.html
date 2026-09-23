@@ -1,5 +1,564 @@
 <!DOCTYPE html>
-<html lang="ne">
-<head><!DOCTYPE html>
-</body>
-</html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;min-height:100%;}body{-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "background": "#f8f9fe", "surface-container-lowest": "#ffffff", "on-background": "#191c1f", "surface": "#f8f9fe", "outline-variant": "#c1c6d6", "on-primary-fixed-variant": "#004493", "on-primary-fixed": "#001a41", "secondary-fixed-dim": "#b3c7ec", "outline": "#727785", "tertiary-container": "#00855b", "on-secondary-fixed-variant": "#334766", "primary": "#0058bc", "surface-tint": "#005bc0", "surface-dim": "#d9dade", "primary-container": "#0070eb", "primary-fixed": "#d8e2ff", "tertiary-fixed-dim": "#4edea3", "secondary": "#4b5f7f", "surface-container-high": "#e7e8ec", "inverse-surface": "#2e3134", "error": "#ba1a1a", "on-tertiary": "#ffffff", "on-tertiary-container": "#f5fff6", "surface-container-low": "#f3f3f8", "surface-bright": "#f8f9fe", "secondary-container": "#c3d8fe", "on-primary": "#ffffff", "inverse-on-surface": "#f0f0f5", "tertiary": "#006947", "surface-container-highest": "#e1e2e7", "on-error-container": "#93000a", "on-secondary-container": "#4a5e7e", "on-tertiary-fixed-variant": "#005236", "primary-fixed-dim": "#adc6ff", "secondary-fixed": "#d5e3ff", "tertiary-fixed": "#6ffbbe", "on-secondary-fixed": "#031c38", "inverse-primary": "#adc6ff", "on-surface-variant": "#414754", "on-tertiary-fixed": "#002113", "on-secondary": "#ffffff", "on-surface": "#191c1f", "error-container": "#ffdad6", "on-primary-container": "#fefcff", "surface-variant": "#e1e2e7", "surface-container": "#edeef2" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xs": "0.25rem", "space-xl": "2rem", "gutter-mobile": "1rem", "max-content-width": "1280px", "space-3xl": "4rem", "space-md": "1rem", "space-xs": "0.5rem", "space-sm": "0.75rem", "gutter-desktop": "2rem", "gutter-tablet": "1.5rem", "space-lg": "1.5rem", "space-2xl": "3rem" }, "fontFamily": { "headline-xl-mobile": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "title-md": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-sm": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "label-md": ["Inter"], "display-hero": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "caption": ["Inter"], "headline-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-xl-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-md text-body-md"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0"><img alt="FB Video Downloader Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANyZc3gGbf1R9iLpSrZC2PcRCQHqFcN2KY7lqYPKCx4sa9aQnu260vfBCLwLZuuQwMAz84yt9o5RxJvIlD4Z2G_WAW6y33O3D5E4oT1oHxuH6Dj_pnVebfctKjeAIndPTOdhGvfvQPzl7Pwbo58AoFmfi-nHdAYLCXfGQV6OnUATJa9cKmw3-n0v2EfGXHDlbd_rpSWBlV4NMCxDECBMiZSgwYSPt-sGRHFZsyQ1fgMXX2fCf5t8QgAA"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary truncate">FB Video Downloader</span><span class="font-caption text-caption text-on-surface-variant truncate">Home</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Toggle Navigation Menu" class="w-11 h-11 flex items-center justify-center rounded-xl bg-surface-container hover:bg-surface-container-high active:bg-surface-container-highest transition-colors text-on-surface" id="menu-btn"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="hidden flex-col px-gutter-mobile pb-space-md pt-space-xs bg-surface-container-lowest shadow-[0_8px_24px_-4px_rgba(12,35,64,0.08)]" id="mobile-drawer"><nav class="flex flex-col gap-space-2xs py-space-xs" data-active-classes="bg-secondary-container text-on-secondary-container font-semibold"><a aria-current="page" class="flex items-center gap-space-sm h-11 px-space-md rounded-xl transition-colors bg-secondary-container text-on-secondary-container font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span>Home</span></a><a class="flex items-center gap-space-sm h-11 px-space-md rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-md text-label-md" data-path="how-it-works" href="#"><span class="material-symbols-outlined text-[20px]">help_center</span><span>How It Works</span></a><a class="flex items-center gap-space-sm h-11 px-space-md rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-md text-label-md" data-path="about" href="#"><span class="material-symbols-outlined text-[20px]">info</span><span>About</span></a><a class="flex items-center gap-space-sm h-11 px-space-md rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-md text-label-md" data-path="faq" href="#"><span class="material-symbols-outlined text-[20px]">quiz</span><span>FAQ</span></a><a class="flex items-center gap-space-sm h-11 px-space-md rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-md text-label-md" data-path="privacy" href="#"><span class="material-symbols-outlined text-[20px]">security</span><span>Privacy</span></a></nav></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Toast Notification Container -->
+<div class="fixed top-20 inset-x-4 z-50 transform -translate-y-10 opacity-0 pointer-events-none transition-all duration-300 flex items-center justify-between gap-space-sm bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl max-w-md mx-auto" id="toast">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-message">Downloading 1080p MP4...</span>
+</div>
+<button class="text-inverse-on-surface hover:opacity-80 transition-opacity" id="toast-dismiss">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Hero Content Area -->
+<section class="px-gutter-mobile pt-space-md pb-space-lg flex flex-col items-center text-center">
+<!-- Delight Pill Badge -->
+<div class="inline-flex items-center gap-space-2xs px-space-md py-space-2xs rounded-full bg-secondary-container text-on-secondary-container shadow-sm mb-space-sm">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase">Free &amp; Ultra Fast Downloader</span>
+</div>
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-surface tracking-tight max-w-xs">
+      Download Facebook Videos Easily
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-sm">
+      Paste any public video, reel, or story URL and save high-fidelity MP4 directly to your device.
+    </p>
+<!-- Downloader Input Box Container -->
+<div class="w-full max-w-lg mt-space-md bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<form class="flex flex-col gap-space-sm" id="download-form" onsubmit="return false;">
+<div class="flex flex-col text-left gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface" for="video-url-input">Facebook Video URL</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[22px] pointer-events-none">link</span>
+<input class="w-full h-11 pl-10 pr-20 bg-surface-container-low text-on-surface rounded-xl font-body-md text-body-md placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-colors" id="video-url-input" placeholder="Paste Facebook video URL (e.g. fb.watch/...)" type="url"/>
+<div class="absolute right-2 flex items-center gap-space-2xs">
+<button class="hidden p-1 rounded-full text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" id="clear-btn" title="Clear input" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm" id="paste-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">content_paste</span>
+<span>Paste</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Dynamic Validation Alert -->
+<div class="hidden items-center gap-space-xs p-space-sm rounded-xl bg-error-container text-on-error-container text-left transition-all" id="validation-alert">
+<span class="material-symbols-outlined text-[20px] shrink-0 text-error">error</span>
+<span class="font-body-sm text-body-sm font-medium" id="alert-text">Please enter a valid Facebook video link.</span>
+</div>
+<!-- Primary Action Trigger -->
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs shadow-md hover:bg-primary-container active:scale-[0.98] transition-all" id="submit-download-btn" type="submit">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Download Video</span>
+</button>
+<!-- Quick Sample / Testing Aid -->
+<div class="flex items-center justify-between pt-space-2xs">
+<span class="font-caption text-caption text-outline">Quick preview testing:</span>
+<button class="font-label-sm text-label-sm text-primary hover:text-on-primary-fixed-variant flex items-center gap-1 transition-colors" id="sample-url-btn" type="button">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Try sample URL</span>
+</button>
+</div>
+</form>
+<!-- Processing State -->
+<div class="hidden flex-col items-center justify-center py-space-lg text-center" id="loading-spinner">
+<div class="relative w-12 h-12 flex items-center justify-center">
+<svg class="animate-spin w-full h-full text-surface-container-highest" fill="none" viewbox="0 0 24 24">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" fill="currentColor"></path>
+</svg>
+<span class="material-symbols-outlined text-primary text-[20px] absolute">videocam</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-sm">Fetching Media Stream</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs">Parsing video metadata, bitrates &amp; CDN codecs...</p>
+</div>
+</div>
+</section>
+<!-- Interactive Result Card Section -->
+<section class="hidden px-gutter-mobile pb-space-lg" id="result-card-section">
+<div class="max-w-lg mx-auto bg-surface-container-lowest p-space-md rounded-2xl shadow-md flex flex-col gap-space-md">
+<!-- Media Header & Verification Pill -->
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Ready to Download • Public Reel</span>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" id="reset-card-btn" title="Close result">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Video Preview Card -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<div class="relative aspect-video w-full rounded-lg overflow-hidden bg-surface-container-high group">
+<img class="w-full h-full object-cover" data-alt="Cinematic aerial drone footage flying over a vibrant coastal turquoise bay during golden hour sunset with warm orange reflections on water ripples, shot in crisp 4k high dynamic range" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXlxDosEYfZjbVuIygHfuJCGxHg_6PPfe02kLcylEx255m6SGYEOhhQ4sFk5smTmuSiepQZcxOxkzBblEj0w6krjkekuE2TtBZi37CVnu2V3FS1lh71vOOLAB-4ASb_UuYe-SpdF1gnjb-O_n9wJuG3vuqkB97RZKLPSwRJALp0Y3UtkE7DI0AFaYYfD5KF_y4h4c_eLYZlOxt32P_um7Y-ChFte-SvEUyKUfahO62M36q-gd8f5omgA"/>
+<div class="absolute inset-0 bg-inverse-surface/30 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 backdrop-blur text-primary flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-inverse-surface/80 text-inverse-on-surface font-caption text-caption">
+            03:45
+          </div>
+<div class="absolute top-2 left-2 px-2 py-0.5 rounded bg-primary text-on-primary font-caption text-caption font-bold">
+            HD 1080p
+          </div>
+</div>
+<div class="flex flex-col text-left">
+<h2 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">
+            Amazing Sunset Drone Reel - Nature Highlights 2026
+          </h2>
+<div class="flex items-center gap-space-2xs mt-1 text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-semibold text-on-surface">@NatureAdventures</span>
+<span>•</span>
+<span>1.2M views</span>
+<span>•</span>
+<span>MP4 Format</span>
+</div>
+</div>
+</div>
+<!-- Quality Selection Matrix -->
+<div class="flex flex-col gap-space-xs text-left">
+<span class="font-title-md text-title-md text-on-surface">Available Resolutions</span>
+<div class="flex flex-col gap-space-xs">
+<!-- 1080p -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">hd</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">1080p</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-primary text-on-primary font-bold">BEST</span>
+</div>
+<span class="font-caption text-caption text-on-surface-variant">Full HD • MP4 • ~48.2 MB</span>
+</div>
+</div>
+<button class="dl-trigger-btn h-9 px-space-md rounded-lg bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container active:scale-95 transition-all flex items-center gap-1" data-quality="1080p">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Save</span>
+</button>
+</div>
+<!-- 720p -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">cloud_download</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">720p</span>
+<span class="font-caption text-caption text-on-surface-variant">Crisp HD • MP4 • ~24.5 MB</span>
+</div>
+</div>
+<button class="dl-trigger-btn h-9 px-space-md rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm hover:opacity-90 active:scale-95 transition-all flex items-center gap-1" data-quality="720p">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Save</span>
+</button>
+</div>
+<!-- 480p -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">video_file</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">480p</span>
+<span class="font-caption text-caption text-on-surface-variant">Standard • MP4 • ~14.1 MB</span>
+</div>
+</div>
+<button class="dl-trigger-btn h-9 px-space-md rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest active:scale-95 transition-all flex items-center gap-1" data-quality="480p">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Save</span>
+</button>
+</div>
+<!-- 360p -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">data_saver_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">360p</span>
+<span class="font-caption text-caption text-on-surface-variant">Data Saver • MP4 • ~8.3 MB</span>
+</div>
+</div>
+<button class="dl-trigger-btn h-9 px-space-md rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest active:scale-95 transition-all flex items-center gap-1" data-quality="360p">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Save</span>
+</button>
+</div>
+<!-- Audio MP3 -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">headphones</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Audio Extract</span>
+<span class="font-caption text-caption text-on-surface-variant">HQ Stereo • MP3 • ~3.2 MB</span>
+</div>
+</div>
+<button class="dl-trigger-btn h-9 px-space-md rounded-lg bg-tertiary text-on-tertiary font-label-sm text-label-sm hover:opacity-90 active:scale-95 transition-all flex items-center gap-1" data-quality="Audio MP3">
+<span class="material-symbols-outlined text-[16px]">music_note</span>
+<span>Save</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Action reset row -->
+<button class="w-full h-11 rounded-xl bg-surface-container text-primary hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center justify-center gap-space-2xs" id="another-url-btn">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Download Another Video</span>
+</button>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="px-gutter-mobile py-space-lg bg-surface-container-low">
+<div class="max-w-lg mx-auto flex flex-col gap-space-md text-center">
+<div class="flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-wider uppercase">Simple Flow</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">How It Works</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Get videos to your camera roll in 3 quick steps.</p>
+</div>
+<div class="flex flex-col gap-space-sm text-left">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 font-headline-sm text-headline-sm">
+            1
+          </div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Copy Video Link</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Open Facebook, tap the <strong>Share</strong> button on any public reel or video, and choose <strong>Copy Link</strong>.
+            </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 font-headline-sm text-headline-sm">
+            2
+          </div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Paste the Link</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Paste the copied URL into the box above and tap the <strong>Download Video</strong> button.
+            </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center shrink-0 font-headline-sm text-headline-sm">
+            3
+          </div>
+<div class="flex flex-col">
+<h3 class="font-title-md text-title-md text-on-surface">Choose Quality &amp; Save</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Pick your preferred video bitrate (Full HD 1080p, 720p, or MP3) and download instantly with zero throttle.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Features Grid -->
+<section class="px-gutter-mobile py-space-xl">
+<div class="max-w-lg mx-auto flex flex-col gap-space-md">
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-wider uppercase">Built For Mobile</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Speed &amp; Privacy First</h2>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">Fast Streams</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Accelerated extraction engine connects directly to source servers.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<div class="w-9 h-9 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">phone_iphone</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">Touch Ready</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ergonomically tuned for Safari, Chrome &amp; mobile web viewers.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<div class="w-9 h-9 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">touch_app</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">1-Tap Process</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Clean layout designed without confusing popups or forced redirects.</p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed-dim text-on-primary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">high_res</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">Full HD 1080p</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Supports both high quality crisp video and compact lightweight data files.</p>
+</div>
+<!-- Feature 5 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<div class="w-9 h-9 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">lock_open</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">No Account</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">100% anonymous. We do not store credentials, user logins, or phone numbers.</p>
+</div>
+<!-- Feature 6 -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-space-xs">
+<div class="w-9 h-9 rounded-xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">Encrypted Links</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct HTTPS pipes protect your transfer and preserve audio fidelity.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Accordion Section -->
+<section class="px-gutter-mobile pb-space-2xl">
+<div class="max-w-lg mx-auto flex flex-col gap-space-md">
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-wider uppercase">Got Questions?</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Frequently Asked</h2>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Question 1 -->
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="faq-trigger w-full px-space-md py-space-sm flex items-center justify-between text-left font-title-md text-title-md text-on-surface">
+<span>Is FB Video Downloader completely free?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-sm text-body-sm">
+            Yes, it is 100% free with no hidden charges, trial periods, or subscription limits. You can save as many public videos and reels as you wish.
+          </div>
+</div>
+<!-- Question 2 -->
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="faq-trigger w-full px-space-md py-space-sm flex items-center justify-between text-left font-title-md text-title-md text-on-surface">
+<span>Can I download private Facebook videos?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-sm text-body-sm">
+            No. To respect user privacy and adhere to data policies, this utility only extracts content from public Facebook posts, public pages, and open group video feeds.
+          </div>
+</div>
+<!-- Question 3 -->
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="faq-trigger w-full px-space-md py-space-sm flex items-center justify-between text-left font-title-md text-title-md text-on-surface">
+<span>Where do files go when downloaded on mobile?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-sm text-body-sm">
+            On iOS (iPhone/iPad), video files save to your Safari 'Downloads' folder or can be sent directly to your Photos app. On Android, files appear in your system 'Downloads' or Gallery app.
+          </div>
+</div>
+<!-- Question 4 -->
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="faq-trigger w-full px-space-md py-space-sm flex items-center justify-between text-left font-title-md text-title-md text-on-surface">
+<span>Does it support Facebook Reels and Stories?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md text-on-surface-variant font-body-sm text-body-sm">
+            Yes! Public Facebook Reels, Watch videos, and active public video clips are fully supported in native resolution.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Delight Micro-script -->
+<script>
+    (function initDownloader() {
+      const form = document.getElementById('download-form');
+      const input = document.getElementById('video-url-input');
+      const clearBtn = document.getElementById('clear-btn');
+      const pasteBtn = document.getElementById('paste-btn');
+      const sampleBtn = document.getElementById('sample-url-btn');
+      const alertBox = document.getElementById('validation-alert');
+      const alertText = document.getElementById('alert-text');
+      const spinner = document.getElementById('loading-spinner');
+      const resultCard = document.getElementById('result-card-section');
+      const resetCardBtn = document.getElementById('reset-card-btn');
+      const anotherUrlBtn = document.getElementById('another-url-btn');
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      const toastDismiss = document.getElementById('toast-dismiss');
+
+      let toastTimer = null;
+
+      function showToast(message) {
+        if (toastTimer) clearTimeout(toastTimer);
+        toastMsg.textContent = message;
+        toast.classList.remove('opacity-0', '-translate-y-10', 'pointer-events-none');
+        toast.classList.add('opacity-100', 'translate-y-0');
+        toastTimer = setTimeout(() => {
+          hideToast();
+        }, 3500);
+      }
+
+      function hideToast() {
+        toast.classList.add('opacity-0', '-translate-y-10', 'pointer-events-none');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }
+
+      toastDismiss?.addEventListener('click', hideToast);
+
+      function showAlert(msg) {
+        alertText.textContent = msg;
+        alertBox.classList.remove('hidden');
+        alertBox.classList.add('flex');
+      }
+
+      function hideAlert() {
+        alertBox.classList.add('hidden');
+        alertBox.classList.remove('flex');
+      }
+
+      function validateFbUrl(url) {
+        if (!url || !url.trim()) return { valid: false, reason: 'Please enter or paste a Facebook video URL first.' };
+        const clean = url.trim();
+        const fbRegex = /^(https?:\/\/)?(www\.|m\.|web\.)?(facebook\.com|fb\.watch)\/.+$/i;
+        if (!fbRegex.test(clean)) {
+          return { valid: false, reason: 'Invalid link. Please use a link from facebook.com or fb.watch.' };
+        }
+        return { valid: true };
+      }
+
+      function executeFetch() {
+        const val = input.value;
+        const validation = validateFbUrl(val);
+
+        if (!validation.valid) {
+          showAlert(validation.reason);
+          input.focus();
+          return;
+        }
+
+        hideAlert();
+        form.classList.add('hidden');
+        spinner.classList.remove('hidden');
+        spinner.classList.add('flex');
+        resultCard.classList.add('hidden');
+
+        // Simulate seamless extraction delay
+        setTimeout(() => {
+          spinner.classList.add('hidden');
+          spinner.classList.remove('flex');
+          resultCard.classList.remove('hidden');
+          resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 1200);
+      }
+
+      form?.addEventListener('submit', (e) => {
+        e.preventDefault();
+        executeFetch();
+      });
+
+      input?.addEventListener('input', () => {
+        if (input.value.length > 0) {
+          clearBtn.classList.remove('hidden');
+        } else {
+          clearBtn.classList.add('hidden');
+        }
+        if (!alertBox.classList.contains('hidden')) {
+          hideAlert();
+        }
+      });
+
+      clearBtn?.addEventListener('click', () => {
+        input.value = '';
+        clearBtn.classList.add('hidden');
+        hideAlert();
+        input.focus();
+      });
+
+      pasteBtn?.addEventListener('click', async () => {
+        try {
+          if (navigator.clipboard && navigator.clipboard.readText) {
+            const clipText = await navigator.clipboard.readText();
+            if (clipText) {
+              input.value = clipText;
+              clearBtn.classList.remove('hidden');
+              hideAlert();
+              executeFetch();
+              return;
+            }
+          }
+        } catch (e) {
+          // Clipboard API may require explicit user grant; fall back smoothly
+        }
+        input.value = 'https://fb.watch/x79KqP02_nature/';
+        clearBtn.classList.remove('hidden');
+        hideAlert();
+        executeFetch();
+      });
+
+      sampleBtn?.addEventListener('click', () => {
+        input.value = 'https://www.facebook.com/reel/1049283719948271';
+        clearBtn.classList.remove('hidden');
+        hideAlert();
+        executeFetch();
+      });
+
+      function resetFlow() {
+        resultCard.classList.add('hidden');
+        form.classList.remove('hidden');
+        input.value = '';
+        clearBtn.classList.add('hidden');
+        hideAlert();
+        input.focus();
+      }
+
+      resetCardBtn?.addEventListener('click', resetFlow);
+      anotherUrlBtn?.addEventListener('click', resetFlow);
+
+      // Bind all download option buttons
+      document.querySelectorAll('.dl-trigger-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const quality = btn.getAttribute('data-quality') || 'Video';
+          showToast(`Downloading ${quality}... Saving file to storage.`);
+        });
+      });
+
+      // Interactive FAQs
+      document.querySelectorAll('.faq-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const item = trigger.closest('.faq-item');
+          const content = item.querySelector('.faq-content');
+          const icon = trigger.querySelector('.material-symbols-outlined');
+          const isExpanded = !content.classList.contains('hidden');
+
+          // Close other open faqs
+          document.querySelectorAll('.faq-item').forEach(other => {
+            if (other !== item) {
+              other.querySelector('.faq-content')?.classList.add('hidden');
+              const otherIcon = other.querySelector('.material-symbols-outlined');
+              if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+            }
+          });
+
+          if (isExpanded) {
+            content.classList.add('hidden');
+            icon.style.transform = 'rotate(0deg)';
+          } else {
+            content.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+    })();
+  </script>
+</div><footer class="mt-space-2xl bg-surface-container-lowest px-gutter-mobile py-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-md max-w-max-content-width mx-auto"><div class="flex items-center gap-space-xs"><img alt="FB Video Downloader Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANyZc3gGbf1R9iLpSrZC2PcRCQHqFcN2KY7lqYPKCx4sa9aQnu260vfBCLwLZuuQwMAz84yt9o5RxJvIlD4Z2G_WAW6y33O3D5E4oT1oHxuH6Dj_pnVebfctKjeAIndPTOdhGvfvQPzl7Pwbo58AoFmfi-nHdAYLCXfGQV6OnUATJa9cKmw3-n0v2EfGXHDlbd_rpSWBlV4NMCxDECBMiZSgwYSPt-sGRHFZsyQ1fgMXX2fCf5t8QgAA"/><span class="font-title-md text-title-md text-on-surface">FB Video Downloader</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Fast, high-fidelity Facebook video saving companion. Extract public video streams in HD &amp; SD quality directly on mobile web.</p><div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs font-label-sm text-label-sm"><a class="text-primary hover:text-on-primary-fixed-variant transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><span class="text-outline-variant">•</span><a class="text-primary hover:text-on-primary-fixed-variant transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><span class="text-outline-variant">•</span><a class="text-primary hover:text-on-primary-fixed-variant transition-colors" data-path="contact" href="#">Contact</a></div><p class="font-caption text-caption text-outline leading-relaxed">Disclaimer: This tool is an independent utility and is not affiliated, endorsed, or certified by Meta Platforms, Inc. or Facebook. All trademarks and copyrights belong to their respective owners.</p><div class="pt-space-xs text-on-surface-variant font-caption text-caption">© 2026 FB Video Downloader. All rights reserved.</div></div></footer></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-space-2xs min-w-[64px] min-h-[44px] transition-colors text-primary font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">download</span><span class="font-label-sm text-label-sm">Downloader</span></a><a class="flex flex-col items-center justify-center gap-space-2xs min-w-[64px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#"><span class="material-symbols-outlined text-[24px]">play_circle</span><span class="font-label-sm text-label-sm">How To</span></a><a class="flex flex-col items-center justify-center gap-space-2xs min-w-[64px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="#"><span class="material-symbols-outlined text-[24px]">help</span><span class="font-label-sm text-label-sm">FAQ</span></a><a class="flex flex-col items-center justify-center gap-space-2xs min-w-[64px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#"><span class="material-symbols-outlined text-[24px]">info</span><span class="font-label-sm text-label-sm">About</span></a></div></nav><script>document.getElementById('menu-btn')?.addEventListener('click', function(){ const drawer = document.getElementById('mobile-drawer'); drawer.classList.toggle('hidden'); drawer.classList.toggle('flex'); });</script></body></html>
